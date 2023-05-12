@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(rgba(4, 234, 241, 0.6),rgba(221, 27, 239, 0.3)); /* Add the desired color gradient */
+}
+
+strong {
+    font-weight: bold;
+}
+
+.page-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    flex: 1;
+}
+
+.hero {
+    background: linear-gradient(rgba(221, 27, 239, 0.6), rgba(4, 234, 241, 0.6)), url('images/hero2-16-9.png');
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 4em;
+    margin-bottom: 2rem;
+}
+
+.hero-cta {
+    align-self: flex-end;
+    font-size: 1.6em;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.content-section {
+    text-align: left;
+    margin-bottom: 1.25rem;
+    background-color: rgba(221, 27, 239, 0.3);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.content-section:nth-child(even) {
+    text-align: right;
+    background-color: rgba(4, 234, 241, 0.3);
+}
+
+.content-section h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.25em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.content-section p {
+    font-size: 1em;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    text-align: left;
+    margin-right: 1rem;
+    width: 75%;
+}
+
+.footer-cta {
+    font-size: 1.25rem;
+    padding: 1rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.cta-button {
+    background-color: rgba(4, 234, 241, .75);
+    border: none;
+    color: black;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    /* Add border-radius for rounded corners */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-title {
+        font-size: 2.5em;
+        margin-bottom: 2rem;
+    }
+
+    .hero-cta {
+        font-size: 1.6em;
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.25em;
+        margin-bottom: 1.25rem;
+    }
+
+    .content-section p {
+        font-size: 1em;
+    }
+
+    .footer-cta {
+        font-size: 1.25em;
+        padding: 1rem;
+    }
+}
